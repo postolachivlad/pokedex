@@ -1,0 +1,14 @@
+%html
+%head
+  %title Pokedex
+
+  %link{rel: "stylesheet", type: 'text/css', href: url("stylesheets/bootstrap.min.css")}
+  %link{rel: 'stylesheet', type: 'text/css', href: url('stylesheets/custom.css')}
+
+
+%body
+  #content
+    = yield
+
+%script{src: url('javascripts/jquery-3.4.1.min.js')}
+%script{src: url('javascripts/main.js')}

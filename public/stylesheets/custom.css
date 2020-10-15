@@ -1,0 +1,11 @@
+html, body {
+  margin, padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
