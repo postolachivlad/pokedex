@@ -6,7 +6,7 @@ The goal of this task is to get a glimpse of your code style, how you think
 through a problem and a general level of your experience. You should aim to
 spend about 2 hours working on this.
 
-This is a Sinatra application. Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort. The core of this has already been set up for you. Please see [getting started](#getting-started) for quick-start instructions. If you want to learn more about Sinatra, you can find further information [here](http://sinatrarb.com/)
+This is a Sinatra application. Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort. The core of this has already been set up for you. Please see [getting started](#getting-started) for quick-start instructions. If you want to learn more about Sinatra, you can find further information [here](http://sinatrarb.com/).
 
 ### Instructions:
 
