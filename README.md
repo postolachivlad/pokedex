@@ -1,14 +1,14 @@
 # Finiata Coding Task
 
-### Context
+### Context:
 
 The goal of this task is to get a glimpse of your code style, how you think
 through a problem and a general level of your experience. You should aim to
 spend about 2 hours working on this.
 
-This is a Sinatra application. Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort. The core of this has already been set up for you. Please see the section #Getting Started. If you want to learn more about Sinatra, you can find further information [here](http://sinatrarb.com/)
+This is a Sinatra application. Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort. The core of this has already been set up for you. Please [see below](#getting-started). If you want to learn more about Sinatra, you can find further information [here](http://sinatrarb.com/)
 
-### Instructions
+### Instructions:
 
 Clone this repository and push the results to your own github accout. When
 you're finished, please send us a link to the repo.
@@ -30,13 +30,13 @@ about the currently displayed Pokemon, such as height, weight, species, abilitie
 
 #### Having a fancy frontend is not necessary for this task, as long as it is readable and completes the requirements.
 
-### Getting Started
+### Getting Started:
 
 1. Run `bundle` to install default gemset
 2. Run the server with `shotgun config.ru` and open `localhost:9393` in your
    browser
 
-### Tests
+### Tests:
 
 A simple sanity check test exists in spec/app_spec.rb. You can run the full test
 suite (all the tests within the spec directory) with `rake` from your terminal.
