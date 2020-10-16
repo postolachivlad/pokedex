@@ -18,7 +18,7 @@ to fetch a random pokemon and display the following three pieces of data:
 * Image
 * API Url to get more information about this pokemon
 
-**Hint: For the image, you can use the following URL once you've pulled the name:
+**Hint: For the image, you can use the following URL once you've pulled the name:**
 > https://img.pokemondb.net/artwork/large/xxx.jpg
 
 For bonus points: instead of just showing the for more information URL, use the API to show some additional stats
