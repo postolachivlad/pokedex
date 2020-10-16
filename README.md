@@ -26,6 +26,8 @@ For bonus points instead of showing the URL, you can instead show some stats
 about the current pokemon, such as height, weight, species, abilities, etc. This
 is optional and just a suggestion of a direction to go if you finish early.
 
+#### Having a fancy frontend is not necessary for this task, as long as it is readable and completes the requirements.
+
 ### Getting Started
 
 1. Run `bundle` to install default gemset
