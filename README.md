@@ -11,18 +11,17 @@ you're finished, please send us a link to the repo.
 
 ### Instructions
 
-Using the [pokemon API](https://pokeapi.co/docs/v2#pokemon), when a user visits
-the index page grab a random pokemon and display the following three pieces of data:
+When a user visits the index page of this application, use the [pokemon API](https://pokeapi.co/docs/v2#pokemon),
+to fetch a random pokemon and display the following three pieces of data:
 
 * Name
 * Image
 * API Url to get more information about this pokemon
 
-For the image, you can use the following URL once you've pulled the name:
-
+**Hint: For the image, you can use the following URL once you've pulled the name:
 > https://img.pokemondb.net/artwork/large/xxx.jpg
 
-For bonus points instead of showing the URL, you can instead show some stats
+For bonus points: instead of just showing the for more information URL, use the API to show some additional stats
 about the current pokemon, such as height, weight, species, abilities, etc. This
 is optional and just a suggestion of a direction to go if you finish early.
 
