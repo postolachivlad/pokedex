@@ -23,12 +23,12 @@ to fetch a random Pokemon and display the following three pieces of data:
 **Hint: For the image, you can use the following URL once you've pulled the name:**
 > https://img.pokemondb.net/artwork/large/xxx.jpg
 
-How you retrieve this information is up to you.
+How you retrieve this information is up to you.  We encourage you to think about design.
 
 **For bonus points:** Instead of just showing the *API URL* to get more information about this Pokemon, use the API to show some additional stats
 about the currently displayed Pokemon, such as height, weight, species, abilities, etc. This is optional and just a suggestion of a direction to go if you finish early.
 
-#### Having a fancy frontend is not necessary for this task, as long as it is readable and completes the requirements.
+#### As this is a backend task, having a fancy frontend is not necessary as long as it is readable and completes the requirements. Clean backend code is much more important.
 
 ### Getting Started:
 
@@ -41,6 +41,4 @@ about the currently displayed Pokemon, such as height, weight, species, abilitie
 A simple sanity check test exists in spec/app_spec.rb. You can run the full test
 suite (all the tests within the spec directory) with `rake` from your terminal.
 
-There's no pressure to add more tests, especially for the sinatra app, although
-as you add library files you are encouraged to test them. This is not mandatory
-and just considered a bonus.
+**For bonus points:** Additional tests as you add library files are encouraged, but not mandatory. When you're testing, think about what is important to test, and what is not. (Hint: The Sinatra framework's functionality is probably covered by Sinatra's own [tests](https://github.com/sinatra/sinatra/tree/master/test)...)
