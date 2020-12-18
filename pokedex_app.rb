@@ -26,23 +26,21 @@ class PokedexApp < Sinatra::Application
     uri = URI.parse(URI.encode("https://pokeapi.co/api/v2/pokemon/#{rand(1..898)}/"))
     api_response = Net::HTTP.get(uri)
     data = JSON.parse(api_response)
-    ability = []
-    data["abilities"].each {|el| ability << el["ability"]["name"].capitalize }
+    
+    creating_pokemon_obj(data)
+  end
 
+  def creating_pokemon_obj(data)
+    ability = []
     pokemon = []
+
+    data["abilities"].each {|el| ability << el["ability"]["name"].capitalize }
+    
     pokemon << data["forms"][0]["name"].capitalize # Name
     pokemon << "https://img.pokemondb.net/artwork/large/#{data["forms"][0]["name"]}.jpg" # Image
     pokemon << data["height"] # Height
     pokemon << data["weight"] # Weight
-    pokemon << ability
-    
+    pokemon << ability # Abilities array
     pokemon
-    # pokemon = {
-    #   name: data["forms"][0]["name"],
-    #   image: "https://img.pokemondb.net/artwork/large/#{data["forms"][0]["name"]}.jpg",
-    #   height: data["height"],
-    #   weight: data["weight"], 
-    #   abilities: ability
-    # }
   end
 end
