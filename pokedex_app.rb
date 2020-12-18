@@ -29,12 +29,20 @@ class PokedexApp < Sinatra::Application
     ability = []
     data["abilities"].each {|el| ability << el["ability"]["name"] }
     
-    pokemon = {
-      name: data["forms"][0]["name"],
-      image: "https://img.pokemondb.net/artwork/large/#{data["forms"][0]["name"]}.jpg",
-      height: data["height"],
-      weight: data["weight"], 
-      abilities: ability
-    }
+    pokemon = []
+    pokemon << data["forms"][0]["name"]
+    pokemon << "https://img.pokemondb.net/artwork/large/#{data["forms"][0]["name"]}.jpg"
+    pokemon << data["height"]
+    pokemon << data["weight"]
+    pokemon << ability
+    
+    pokemon
+    # pokemon = {
+    #   name: data["forms"][0]["name"],
+    #   image: "https://img.pokemondb.net/artwork/large/#{data["forms"][0]["name"]}.jpg",
+    #   height: data["height"],
+    #   weight: data["weight"], 
+    #   abilities: ability
+    # }
   end
 end
