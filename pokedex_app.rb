@@ -8,6 +8,10 @@ class PokedexApp < Sinatra::Application
     display_page :index, {pokemon: call_api}
   end
 
+  get /\/([\D\d]+)/ do
+    redirect '/'
+  end
+
   def display_page(location, locals = {})
     options = {
       layout_options: { views: './views/layouts' }, # Special options only used for rendering the layout
