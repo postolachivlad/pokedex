@@ -9,8 +9,8 @@
     justify-content: center;
 }
 .card {
-    height:75%;
-    width: 35%;
+    height:70%;
+    width: 25%;
     background:rgba(206,201,201,.3);
     display: flex; 
     align-items: center; 
