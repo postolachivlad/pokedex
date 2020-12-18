@@ -1,8 +1,11 @@
+require 'json'
+require 'net/http'
+
 class PokedexApp < Sinatra::Application
   enable :sessions
 
   get '/' do
-    display_partial :index
+    display_page :index, {pokemon: call_api}
   end
 
   def display_page(location, locals = {})
@@ -17,5 +20,21 @@ class PokedexApp < Sinatra::Application
 
   def display_partial(location, locals = {})
     haml location.to_sym, layout: false, locals: locals # Rendering method (template name)
+  end
+
+  def call_api()
+    uri = URI.parse(URI.encode("https://pokeapi.co/api/v2/pokemon/#{rand(1..898)}/"))
+    api_response = Net::HTTP.get(uri)
+    data = JSON.parse(api_response)
+    ability = []
+    data["abilities"].each {|el| ability << el["ability"]["name"] }
+    
+    pokemon = {
+      name: data["forms"][0]["name"],
+      image: "https://img.pokemondb.net/artwork/large/#{data["forms"][0]["name"]}.jpg",
+      height: data["height"],
+      weight: data["weight"], 
+      abilities: ability
+    }
   end
 end
